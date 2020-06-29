@@ -46,4 +46,4 @@ https://www.sfml-dev.org/tutorials/2.5/start-linux.php
 
 
 ### Why have I coded something like that when there is better software elsewhere
-A company needed an automatic and wuick way of finding very easily dead pixels of many computer screens.
+A company needed an automatic and quick way of finding dead pixels among many computer screens. They therefore needed only 3 pictures, and with that only, the software could figure out "if and where" there were dead pixels among their screens.
