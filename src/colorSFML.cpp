@@ -91,25 +91,25 @@ bool colorSFML::checkPixel(const sf::Color col, const unsigned n) {
 }
 
 bool colorSFML::inBound(const unsigned R, const unsigned G, const unsigned B, const unsigned n) {
-    unsigned offsetValue = 50;
+    unsigned balanceValue = 50;
     unsigned r,g,b;
 
     switch(n) {
         case 1:
             r = 255, g = 0, b = 0;
-            if (R >= r - offsetValue && G <= g + offsetValue && B <= b + offsetValue)
+            if (R >= r - balanceValue && G <= g + balanceValue && B <= b + balanceValue)
                 return true;
             else
                 return false;
         case 2:
             r=0,g=255,b=0;
-            if(R <= r+offsetValue && G >= g-offsetValue && B <= b+offsetValue)
+            if(R <= r + balanceValue && G >= g - balanceValue && B <= b + balanceValue)
                 return true;
             else
                 return false;
         case 3:
             r=0,g=0,b=255;
-            if(R <= r+offsetValue && G <= g+offsetValue && B >= b-offsetValue)
+            if(R <= r + balanceValue && G <= g + balanceValue && B >= b - balanceValue)
                 return true;
             else
                 return false;
