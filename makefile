@@ -6,7 +6,7 @@ FLAGS = -c -Wall
 all: $(O) $(B) $(B)/main
 
 $(B)/main: $(O)/colorSFML.o 
-	g++ -ggdb $(S)/main.cpp -o $(B)/main $(O)/*.o -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+	g++ -ggdb $(S)/main.cpp -o $(B)/main $(O)/*.o -lsfml-graphics
 
 $(O)/colorSFML.o: 
 	g++ $(FLAGS) $(S)/colorSFML.cpp -o $(O)/colorSFML.o
